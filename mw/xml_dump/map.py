@@ -15,7 +15,10 @@ class SharedCounter(object):
     second process may read the old value before the new one is written by the
     first process. The solution is to use a multiprocessing.Lock to guarantee
     the atomicity of the modifications to Value.
-    This class comes almost entirely from Eli Bendersky's blog:
+    This class comes entirely from Víctor Térrons LEMON project in which
+    he faced the same issue:
+    https://github.com/vterron/lemon/blob/master/methods.py
+    He in turn took it almost entirely from Eli Bendersky's blog:
     http://eli.thegreenplace.net/2012/01/04/shared-counter-with-pythons-multiprocessing/
     """
 
@@ -43,6 +46,9 @@ class Queue(multiprocessing.queues.Queue):
     are called, respectively. This not only prevents NotImplementedError from
     being raised, but also allows us to implement a reliable version of both
     qsize() and empty().
+    This class comes almost entirely from Víctor Térrons LEMON project in which
+    he faced the same issue:
+    https://github.com/vterron/lemon/blob/master/methods.py
     """
 
     def __init__(self, *args, **kwargs):

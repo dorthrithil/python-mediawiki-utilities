@@ -3,7 +3,7 @@ from distutils.core import setup
 from setuptools import find_packages
 
 setup(
-    name='mediawiki-utilities',
+    name='dorthrithil-mediawiki-utilities',
     version="0.4.18",
     author='Aaron Halfaker',
     author_email='aaron.halfaker@gmail.com',

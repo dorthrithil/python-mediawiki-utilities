@@ -23,3 +23,7 @@ About the author
 Contributors
 ============
 None yet.  See http://github.com/halfak/mediawiki-utilities.  Pull requests are encouraged.
+
+Note
+====
+Fork by Felix Engelmann: https://github.com/dorthrithil/python-mediawiki-utilities
